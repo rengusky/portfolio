@@ -1,0 +1,121 @@
+/* ============================================================
+   PHOTOGRAPHY
+   Full-bleed section with masonry grid + category filter pills.
+   ============================================================ */
+
+.photo-section {
+  background: var(--color-surface);
+  padding: var(--space-3xl) 0;
+}
+
+.photo-section__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+
+/* --- Filter pills --- */
+.photo-filter {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-lg);
+}
+
+.photo-filter__btn {
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-border);
+  background: transparent;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.photo-filter__btn:hover,
+.photo-filter__btn.active {
+  background: var(--color-text);
+  border-color: var(--color-text);
+  color: #ffffff;
+}
+
+
+/* --- Masonry grid (CSS Grid–based) --- */
+.photo__masonry {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 220px;
+  gap: var(--space-sm);
+}
+
+/* Base photo cell */
+.photo__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--color-border);
+  cursor: pointer;
+}
+
+/* Modifiers — visual variety in the grid */
+.photo__item--tall { grid-row: span 2; }
+.photo__item--wide { grid-column: span 2; }
+
+.photo__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.photo__item:hover img {
+  transform: scale(1.06);
+}
+
+
+/* --- Hover overlay with caption --- */
+.photo__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, transparent 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--space-sm);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.photo__item:hover .photo__overlay {
+  opacity: 1;
+}
+
+.photo__label {
+  color: #fff;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.photo__cat {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+}
+
+/* JS-driven visibility toggle */
+.photo__item.hidden {
+  display: none;
+}
+
+
+/* --- Section footer CTA --- */
+.photo-section__footer {
+  margin-top: var(--space-xl);
+  text-align: center;
+}

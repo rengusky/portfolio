@@ -1,0 +1,15 @@
+/* ============================================================
+   FOOTER
+   Simple one-line footer with copyright + credit.
+   ============================================================ */
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-lg) var(--space-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}

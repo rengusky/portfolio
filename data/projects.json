@@ -1,0 +1,26 @@
+[
+  {
+    "image": "assets/images/project-shareplay.jpg",
+    "alt": "SharePlay feature in Zoho Show on Apple devices",
+    "tag": "iOS · Apple Platform",
+    "title": "SharePlay — Zoho Show",
+    "desc": "Designed SharePlay integration for Zoho Show — a platform-native collaboration feature highlighted at Apple's WWDC keynote.",
+    "link": "#"
+  },
+  {
+    "image": "assets/images/project-ai.jpg",
+    "alt": "Create with AI flow in Zoho Show",
+    "tag": "AI · Product Design",
+    "title": "Create with AI",
+    "desc": "Designed the end-to-end AI flow that generates complete, ready-to-present decks from a single prompt inside Zoho Show.",
+    "link": "#"
+  },
+  {
+    "image": "assets/images/project-apple.jpg",
+    "alt": "Zoho Show across iOS, macOS, watchOS and Apple TV",
+    "tag": "Cross-platform · Design × Engineering",
+    "title": "Zoho Show · Apple Ecosystem",
+    "desc": "Owned end-to-end design for Zoho Show across iOS, iPadOS, macOS, Apple TV, and watchOS — including two standalone apps.",
+    "link": "#"
+  }
+]

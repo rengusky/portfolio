@@ -1,0 +1,58 @@
+[
+  {
+    "image": "assets/images/photo-1.jpg",
+    "alt": "Street — City lights at dusk",
+    "label": "City lights at dusk",
+    "category": "street",
+    "size": "tall"
+  },
+  {
+    "image": "assets/images/photo-2.jpg",
+    "alt": "Nature — Morning mist",
+    "label": "Morning mist",
+    "category": "nature",
+    "size": ""
+  },
+  {
+    "image": "assets/images/photo-3.jpg",
+    "alt": "Portrait — Quiet afternoon",
+    "label": "Quiet afternoon",
+    "category": "portrait",
+    "size": ""
+  },
+  {
+    "image": "assets/images/photo-4.jpg",
+    "alt": "Street — Rain-soaked pavement",
+    "label": "Rain-soaked pavement",
+    "category": "street",
+    "size": "wide"
+  },
+  {
+    "image": "assets/images/photo-5.jpg",
+    "alt": "Nature — Golden hour",
+    "label": "Golden hour",
+    "category": "nature",
+    "size": "tall"
+  },
+  {
+    "image": "assets/images/photo-6.jpg",
+    "alt": "Portrait — In thought",
+    "label": "In thought",
+    "category": "portrait",
+    "size": ""
+  },
+  {
+    "image": "assets/images/photo-7.jpg",
+    "alt": "Street — Commute",
+    "label": "Commute",
+    "category": "street",
+    "size": ""
+  },
+  {
+    "image": "assets/images/photo-8.jpg",
+    "alt": "Nature — Open fields",
+    "label": "Open fields",
+    "category": "nature",
+    "size": "wide"
+  }
+]
