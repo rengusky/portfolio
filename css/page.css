@@ -194,18 +194,25 @@ img.logo-mark {
 /* ── Side Projects ─────────────────────────────────────────── */
 
 .project-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--space-md);
-  padding: 4px 0;
+  display: block;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  color: var(--color-text);
+  transition: border-color var(--transition);
 }
 
-.project-info {
+.project-row:hover {
+  border-color: var(--color-text);
+}
+
+.project-header {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  flex: 1;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 6px;
 }
 
 .project-name {
@@ -213,26 +220,17 @@ img.logo-mark {
   font-weight: 600;
 }
 
+.project-arrow {
+  font-size: var(--text-base);
+  color: var(--color-muted);
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+
 .project-desc {
   font-size: 14px;
   color: var(--color-muted);
   line-height: 1.45;
-}
-
-.project-cta {
-  flex-shrink: 0;
-  font-size: var(--text-base);
-  color: var(--color-text);
-  border: 1px solid #000000;
-  padding: 12px;
-  line-height: 1;
-  white-space: nowrap;
-  transition: background var(--transition), color var(--transition);
-}
-
-.project-cta:hover {
-  background: #000000;
-  color: #ffffff;
 }
 
 
@@ -243,12 +241,25 @@ img.logo-mark {
     padding-top: var(--space-lg);
   }
 
-  .project-row {
-    flex-direction: column;
-    gap: var(--space-xs);
+  /* Smaller avatar on narrow screens */
+  .profile__avatar {
+    width: 72px;
+    height: 72px;
   }
 
-  .project-cta {
-    align-self: flex-start;
+  /* 44px touch targets for social row links */
+  .social__contact,
+  .social__links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 4px 0;
   }
+
+  /* Wider gap between social links for easier tapping */
+  .social__links {
+    gap: 20px;
+  }
+
+  /* Cards already block-level — no extra overrides needed */
 }
