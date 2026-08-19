@@ -153,12 +153,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
 }
 
 .exp-company {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .logo-mark {
@@ -183,6 +187,14 @@ img.logo-mark {
 .exp-name {
   font-size: var(--text-base);
   font-weight: 500;
+  display: block;
+}
+
+.exp-role {
+  font-size: 13px;
+  color: var(--color-muted);
+  display: block;
+  margin-top: 2px;
 }
 
 .exp-year {
@@ -231,6 +243,18 @@ img.logo-mark {
   font-size: 14px;
   color: var(--color-muted);
   line-height: 1.45;
+}
+
+
+/* ── Footer ────────────────────────────────────────────────── */
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-lg) 0 var(--space-xl);
+  font-size: 14px;
+  color: var(--color-muted);
 }
 
 
