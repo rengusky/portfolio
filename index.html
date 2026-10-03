@@ -19,7 +19,7 @@
   <main class="page-wrap" id="main">
 
     <!-- ── Header ───────────────────────────────────────────── -->
-    <header class="profile">
+    <header class="profile" id="home">
 
       <div class="profile__identity">
         <div class="profile__avatar">
@@ -48,30 +48,41 @@
     <hr class="divider" />
 
     <!-- ── Work Experience ──────────────────────────────────── -->
-    <section class="section-block" aria-labelledby="work-heading">
+    <section class="section-block" id="work" aria-labelledby="work-heading">
 
       <h2 class="section-label" id="work-heading">Work Experience</h2>
 
-      <div class="exp-row">
-        <div class="exp-company">
-          <img src="assets/zoho logo.svg" alt="Zoho" class="logo-mark" />
-          <div>
-            <span class="exp-name">Zoho</span>
-            <span class="exp-role">Lead Designer, Zoho Show</span>
-          </div>
+      <div class="exp-card">
+        <img src="assets/zoho logo.svg" alt="Zoho" class="exp-logo" />
+        <div class="exp-header">
+          <span class="exp-name">Zoho</span>
+          <span class="exp-since">Since 2019</span>
         </div>
-        <span class="exp-year">2019 – Present</span>
+        <p class="exp-title">Leading Design team for Zoho Show</p>
+        <ul class="exp-bullets">
+          <li>0 → 1 Zoho Show for Mac, iOS/iPad OS</li>
+          <li>0 → 1 Zoho Show for Watch OS and Apple TV</li>
+          <li>Internal Figma plugins to house and distribute components.</li>
+          <li>Designed AI powered presentation creation flow.</li>
+          <li>AI powered coding — new flows, enhancing existing flows.</li>
+          <li>Grew from sole designer to design team lead over 6+ years at Zoho Show.</li>
+        </ul>
+        <a href="https://zoho.com/show" target="_blank" rel="noopener noreferrer" class="exp-cta">Try Zoho Show</a>
       </div>
 
-      <div class="exp-row">
-        <div class="exp-company">
-          <img src="assets/doodleblue.jpg" alt="doodleblue" class="logo-mark" style="height:30px;width:auto;" />
-          <div>
-            <span class="exp-name">doodleblue</span>
-            <span class="exp-role">UI/UX Designer</span>
-          </div>
+      <div class="exp-card">
+        <img src="assets/doodleblue.svg" alt="doodleblue" class="exp-logo" />
+        <div class="exp-header">
+          <span class="exp-name">Doodleblue</span>
+          <span class="exp-since">2017 – 2019</span>
         </div>
-        <span class="exp-year">2017 – 2019</span>
+        <p class="exp-title">UI/UX Designer</p>
+        <ul class="exp-bullets">
+          <li>Started as an intern and grew into a full-time UI/UX Designer role.</li>
+          <li>Worked across multiple industries and platforms — web, mobile, and beyond.</li>
+          <li>Part of an on-site team in Saudi Arabia for a telecom client.</li>
+          <li>Handled both graphic design and UI/UX design throughout the tenure.</li>
+        </ul>
       </div>
 
     </section>
@@ -79,40 +90,60 @@
     <hr class="divider" />
 
     <!-- ── Side Projects ────────────────────────────────────── -->
-    <section class="section-block" aria-labelledby="projects-heading">
+    <section class="section-block" id="projects" aria-labelledby="projects-heading">
 
       <h2 class="section-label" id="projects-heading">Side Projects</h2>
 
-      <a href="https://chennai-clubs.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-row">
-        <div class="project-header">
-          <strong class="project-name">Namma Clubs</strong>
-          <span class="project-arrow">↗</span>
+      <a href="https://chennai-clubs.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card">
+        <div class="project-card__preview" style="background: #2543E5;">
+          <img src="assets/images/namma-clubs.png" alt="Namma Clubs preview" onerror="this.style.display='none'" />
         </div>
-        <span class="project-desc">Find communities and clubs in Chennai</span>
+        <div class="project-card__body">
+          <div class="project-card__text">
+            <strong class="project-name">Namma Clubs</strong>
+            <span class="project-desc">Find communities and clubs in Chennai</span>
+          </div>
+          <span class="project-card__arrow">↗</span>
+        </div>
       </a>
 
-      <a href="https://www.figma.com/community/plugin/1622264338067161068/design-to-markdown" target="_blank" rel="noopener noreferrer" class="project-row">
-        <div class="project-header">
-          <strong class="project-name">Design to .MD</strong>
-          <span class="project-arrow">↗</span>
+      <a href="https://testflight.apple.com/join/StmCpgpn" target="_blank" rel="noopener noreferrer" class="project-card">
+        <div class="project-card__preview" style="background: #1C1C1E;">
+          <img src="assets/images/stash.png" alt="Stash preview" onerror="this.style.display='none'" />
         </div>
-        <span class="project-desc">Figma plugin to convert your designs to .md</span>
+        <div class="project-card__body">
+          <div class="project-card__text">
+            <strong class="project-name">Stash</strong>
+            <span class="project-desc">All your inspirations in one place</span>
+          </div>
+          <span class="project-card__arrow">↗</span>
+        </div>
       </a>
 
-      <a href="https://testflight.apple.com/join/StmCpgpn" target="_blank" rel="noopener noreferrer" class="project-row">
-        <div class="project-header">
-          <strong class="project-name">Stash</strong>
-          <span class="project-arrow">↗</span>
+      <a href="https://whatsmytax-five.vercel.app" target="_blank" rel="noopener noreferrer" class="project-card">
+        <div class="project-card__preview" style="background: #CCFF00;">
+          <img src="assets/images/whatsmytax.png" alt="Whatsmy Tax preview" onerror="this.style.display='none'" />
         </div>
-        <span class="project-desc">Save your design inspiration, references in a single place</span>
+        <div class="project-card__body">
+          <div class="project-card__text">
+            <strong class="project-name">Whatsmy Tax?</strong>
+            <span class="project-desc">Calculate your income tax to the paise</span>
+          </div>
+          <span class="project-card__arrow">↗</span>
+        </div>
       </a>
 
-      <a href="https://whatsmytax-five.vercel.app" target="_blank" rel="noopener noreferrer" class="project-row">
-        <div class="project-header">
-          <strong class="project-name">Whatsmy Tax?</strong>
-          <span class="project-arrow">↗</span>
+      <a href="https://www.figma.com/community/plugin/1622264338067161068/design-to-markdown" target="_blank" rel="noopener noreferrer" class="project-card">
+        <div class="project-card__preview" style="background: #7B61FF;">
+          <img src="assets/images/design-to-md.png" alt="Design to .MD preview" onerror="this.style.display='none'" />
         </div>
-        <span class="project-desc">Calculate your tax to the paise</span>
+        <div class="project-card__body">
+          <div class="project-card__text">
+            <strong class="project-name">Design to .MD</strong>
+            <span class="project-desc">Figma plugin — export designs as Markdown</span>
+          </div>
+          <span class="project-card__arrow">↗</span>
+        </div>
       </a>
 
     </section>
@@ -126,5 +157,12 @@
 
   </main>
 
+  <nav class="bottom-nav" id="bottom-nav" aria-label="Page sections">
+    <a class="bottom-nav__item active" href="#home" data-section="home">Home</a>
+    <a class="bottom-nav__item" href="#work" data-section="work">Works</a>
+    <a class="bottom-nav__item" href="#projects" data-section="projects">Side Projects</a>
+  </nav>
+
+  <script src="js/bottom-nav.js"></script>
 </body>
 </html>
