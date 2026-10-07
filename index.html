@@ -1,168 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Rangarajan (Ranga) — Product Designer bridging design and engineering at Zoho Show." />
-  <title>Ranga — Product Designer</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/page.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ranga is a product designer and builder bridging design and engineering through code, shipped features, and AI.">
+  <meta name="theme-color" content="#FAFAFA">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="canonical" href="https://rangarajan.design/">
+  <meta property="og:title" content="Ranga — Product Designer × Builder">
+  <meta property="og:description" content="Bridging design and engineering through code, shipped features, and AI.">
+  <meta property="og:url" content="https://rangarajan.design/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ranga">
+  <meta property="og:image" content="https://rangarajan.design/assets/images/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ranga — Product Designer × Builder">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ranga — Product Designer × Builder">
+  <meta name="twitter:description" content="Bridging design and engineering through code, shipped features, and AI.">
+  <meta name="twitter:image" content="https://rangarajan.design/assets/images/social-preview.png">
+  <meta name="twitter:image:alt" content="Ranga — Product Designer × Builder">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://rangarajan.design/#person",
+          "name": "Rangarajan",
+          "alternateName": "Ranga",
+          "url": "https://rangarajan.design/",
+          "jobTitle": "Product Designer and Builder",
+          "description": "Rangarajan is a product designer and builder who leads design for Zoho Show. He bridges design and engineering through code and AI. Outside work, he enjoys badminton, photography, PlayStation games, exploring food, tinkering with hardware, watches, shoes, and thoughtfully designed products.",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Zoho Corporation",
+            "url": "https://www.zoho.com/"
+          },
+          "knowsAbout": [
+            "Product design",
+            "Design systems",
+            "Web applications",
+            "Mobile applications",
+            "Desktop applications",
+            "AI-assisted development",
+            "Consumer technology",
+            "Computer hardware",
+            "Watches and product craftsmanship"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/ranga19/",
+            "https://www.instagram.com/rangar19/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://rangarajan.design/#website",
+          "url": "https://rangarajan.design/",
+          "name": "Ranga — Product Designer × Builder",
+          "description": "The portfolio of Ranga, a product designer and builder bridging design and engineering through code, shipped features, and AI.",
+          "author": {
+            "@id": "https://rangarajan.design/#person"
+          },
+          "inLanguage": "en"
+        }
+      ]
+    }
+  </script>
+  <title>Ranga — Product Designer × Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20261006-footer-v2">
 </head>
-<body>
+<body class="home-page">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <main class="page-wrap" id="main">
+  <header class="site-header content-spine">
+    <a class="brand" href="index.html" aria-label="Ranga, home">Ranga</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="#side-projects">Side Projects</a>
+      <a href="notes.html">Notes</a>
+      <a href="about.html">About me</a>
+    </nav>
+  </header>
 
-    <!-- ── Header ───────────────────────────────────────────── -->
-    <header class="profile" id="home">
-
-      <div class="profile__identity">
-        <div class="profile__avatar">
-          <img src="assets/images/hero.jpeg" alt="Portrait of Ranga" />
+  <main id="main">
+    <section class="intro reading-spine" id="about" aria-labelledby="intro-title">
+      <div class="intro-profile">
+        <div class="portrait" role="img" aria-label="Portrait of Ranga">
+          <span class="portrait-fallback" aria-hidden="true">R</span>
+          <picture>
+            <source media="(max-width: 640px)" srcset="assets/images/ranga-portrait-560.jpg">
+            <img src="assets/images/ranga-portrait-840.jpg" width="630" height="840" alt="" fetchpriority="high" onerror="this.parentElement.hidden=true">
+          </picture>
         </div>
-        <div class="profile__title">
-          <h1 class="profile__name">Ranga</h1>
-          <p class="profile__role">Product Designer • Design × Engineering</p>
+        <div class="intro-copy">
+          <h1 id="intro-title">Ranga</h1>
+          <p class="intro-role">Product Designer × Builder</p>
+          <div class="intro-details">
+            <p>Bridging design and engineering — writing code, shipping features, and using AI to close the gap between what I design and what gets built.</p>
+            <p>Currently, I am leading the design team at <a href="https://www.zoho.com/show/" target="_blank" rel="noopener noreferrer">Zoho Show</a> — a cross-platform presentation app for Web, Android, and Apple.</p>
+          </div>
         </div>
       </div>
-
-      <p class="profile__bio">
-        Bridging design and engineering — writing code, shipping features, and using AI to close the gap between what I design and what gets built. Currently, I am leading the design team at <a href="https://zoho.com/show" target="_blank" rel="noopener noreferrer">Zoho Show</a> — a cross-platform presentation app for Web, Android, and Apple.
-      </p>
-
-      <div class="profile__social">
-        <a href="mailto:srihari.rr@zohomail.in" class="social__contact">Email Me</a>
-        <nav class="social__links" aria-label="Social links">
-          <a href="https://www.instagram.com/rangar19/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://www.linkedin.com/in/ranga19/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </nav>
+      <div class="current-build-block" hidden>
+        <p class="current-build-label">Currently building</p>
+        <article class="stash-feature-card" data-stash-card>
+          <span class="stash-feature-dots" aria-hidden="true"></span>
+          <div class="stash-feature-copy">
+            <div>
+              <h2>Stash</h2>
+              <p>All your inspirations in one place.</p>
+            </div>
+            <div class="stash-feature-actions">
+              <a class="stash-feature-primary" href="https://testflight.apple.com/join/StmCpgpn" target="_blank" rel="noopener noreferrer">Join TestFlight</a>
+              <a class="stash-feature-secondary" href="#side-projects">Read more...</a>
+            </div>
+          </div>
+          <p class="stash-feature-note">*Also available on iPhone and iPad</p>
+          <div class="stash-feature-app" aria-hidden="true">
+            <img src="assets/images/stash-card-app.png" width="351" height="207" alt="">
+          </div>
+        </article>
       </div>
-
-    </header>
-
-    <hr class="divider" />
-
-    <!-- ── Work Experience ──────────────────────────────────── -->
-    <section class="section-block" id="work" aria-labelledby="work-heading">
-
-      <h2 class="section-label" id="work-heading">Work Experience</h2>
-
-      <div class="exp-card">
-        <img src="assets/zoho logo.svg" alt="Zoho" class="exp-logo" />
-        <div class="exp-header">
-          <span class="exp-name">Zoho</span>
-          <span class="exp-since">Since 2019</span>
-        </div>
-        <p class="exp-title">Leading Design team for Zoho Show</p>
-        <ul class="exp-bullets">
-          <li>0 → 1 Zoho Show for Mac, iOS/iPad OS</li>
-          <li>0 → 1 Zoho Show for Watch OS and Apple TV</li>
-          <li>Internal Figma plugins to house and distribute components.</li>
-          <li>Designed AI powered presentation creation flow.</li>
-          <li>AI powered coding — new flows, enhancing existing flows.</li>
-          <li>Grew from sole designer to design team lead over 6+ years at Zoho Show.</li>
-        </ul>
-        <a href="https://zoho.com/show" target="_blank" rel="noopener noreferrer" class="exp-cta">Try Zoho Show</a>
-      </div>
-
-      <div class="exp-card">
-        <img src="assets/doodleblue.svg" alt="doodleblue" class="exp-logo" />
-        <div class="exp-header">
-          <span class="exp-name">Doodleblue</span>
-          <span class="exp-since">2017 – 2019</span>
-        </div>
-        <p class="exp-title">UI/UX Designer</p>
-        <ul class="exp-bullets">
-          <li>Started as an intern and grew into a full-time UI/UX Designer role.</li>
-          <li>Worked across multiple industries and platforms — web, mobile, and beyond.</li>
-          <li>Part of an on-site team in Saudi Arabia for a telecom client.</li>
-          <li>Handled both graphic design and UI/UX design throughout the tenure.</li>
-        </ul>
-      </div>
-
     </section>
 
-    <hr class="divider" />
-
-    <!-- ── Side Projects ────────────────────────────────────── -->
-    <section class="section-block" id="projects" aria-labelledby="projects-heading">
-
-      <h2 class="section-label" id="projects-heading">Side Projects</h2>
-
-      <a href="https://chennai-clubs.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card">
-        <div class="project-card__preview" style="background: #2543E5;">
-          <img src="assets/images/namma-clubs.png" alt="Namma Clubs preview" onerror="this.style.display='none'" />
-        </div>
-        <div class="project-card__body">
-          <div class="project-card__text">
-            <strong class="project-name">Namma Clubs</strong>
-            <span class="project-desc">Find communities and clubs in Chennai</span>
-          </div>
-          <span class="project-card__arrow">↗</span>
-        </div>
-      </a>
-
-      <a href="https://testflight.apple.com/join/StmCpgpn" target="_blank" rel="noopener noreferrer" class="project-card">
-        <div class="project-card__preview" style="background: #1C1C1E;">
-          <img src="assets/images/stash.png" alt="Stash preview" onerror="this.style.display='none'" />
-        </div>
-        <div class="project-card__body">
-          <div class="project-card__text">
-            <strong class="project-name">Stash</strong>
-            <span class="project-desc">All your inspirations in one place</span>
-          </div>
-          <span class="project-card__arrow">↗</span>
-        </div>
-      </a>
-
-      <a href="https://whatsmytax-five.vercel.app" target="_blank" rel="noopener noreferrer" class="project-card">
-        <div class="project-card__preview" style="background: #CCFF00;">
-          <img src="assets/images/whatsmytax.png" alt="Whatsmy Tax preview" onerror="this.style.display='none'" />
-        </div>
-        <div class="project-card__body">
-          <div class="project-card__text">
-            <strong class="project-name">Whatsmy Tax?</strong>
-            <span class="project-desc">Calculate your income tax to the paise</span>
-          </div>
-          <span class="project-card__arrow">↗</span>
-        </div>
-      </a>
-
-      <a href="https://www.figma.com/community/plugin/1622264338067161068/design-to-markdown" target="_blank" rel="noopener noreferrer" class="project-card">
-        <div class="project-card__preview" style="background: #7B61FF;">
-          <img src="assets/images/design-to-md.png" alt="Design to .MD preview" onerror="this.style.display='none'" />
-        </div>
-        <div class="project-card__body">
-          <div class="project-card__text">
-            <strong class="project-name">Design to .MD</strong>
-            <span class="project-desc">Figma plugin — export designs as Markdown</span>
-          </div>
-          <span class="project-card__arrow">↗</span>
-        </div>
-      </a>
-
+    <section class="snippets" id="snippets" aria-labelledby="snippets-title" hidden>
+      <h2 class="section-label content-spine" id="snippets-title">Snippets</h2>
+      <div class="snippet-reel" role="group" aria-label="Snippets media placeholders">
+        <div class="snippet snippet--one"><span>Media pending</span></div>
+        <div class="snippet snippet--two"><span>Media pending</span></div>
+        <div class="snippet snippet--three"><span>Media pending</span></div>
+        <div class="snippet snippet--four"><span>Media pending</span></div>
+        <div class="snippet snippet--five"><span>Media pending</span></div>
+      </div>
     </section>
 
-    <hr class="divider" />
+    <section class="featured-work content-spine" aria-labelledby="works-title">
+      <h2 class="section-label" id="works-title">My Works</h2>
+      <a class="work-row" href="designing-for-mac.html">
+        <div class="work-copy">
+          <h2 class="item-title">Designing for Mac</h2>
+          <p class="item-description body-1">0 → 1, end-to-end design, discussions, and more recently, development.</p>
+          <span class="item-action">View project</span>
+        </div>
+        <div class="work-media work-media--mac">
+          <img src="assets/images/zoho-show.jpg" width="2400" height="1558" alt="Zoho Show for Mac displaying the My Presentations library in a native macOS window">
+        </div>
+      </a>
 
-    <footer class="page-footer">
-      <span>Last updated Aug 19, 2026</span>
-      <span>Ranga</span>
-    </footer>
+      <article class="work-row" hidden>
+        <div class="work-copy">
+          <h2 class="item-title">Live Activity</h2>
+          <p class="item-description">Project details coming soon.</p>
+        </div>
+        <div class="media-placeholder media-placeholder--feature media-placeholder--accent" role="img" aria-label="Live Activity project media pending">
+          <span>Live Activity<br>Media pending</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="side-projects content-spine" id="side-projects" aria-labelledby="side-projects-title">
+      <h2 class="section-label" id="side-projects-title">Side Projects</h2>
+      <div class="project-grid">
+        <a class="project-card" href="https://testflight.apple.com/join/StmCpgpn" target="_blank" rel="noopener noreferrer">
+          <span class="project-card-media project-card-media--stash">
+            <img src="assets/images/stash-media.png?v=2" width="1200" height="900" alt="Stash running on iPhone and Mac with a visual library of saved inspiration">
+          </span>
+          <span class="project-card-copy">
+            <span class="item-title">Stash</span>
+            <span class="item-description">An all-in-one collection app for saving design references—images, videos, and links.</span>
+            <span class="item-action">View on TestFlight</span>
+          </span>
+        </a>
+
+        <a class="project-card" href="https://www.figma.com/community/plugin/1622264338067161068/design-to-markdown" target="_blank" rel="noopener noreferrer">
+          <span class="project-card-media project-card-media--design-to-md">
+            <img src="assets/images/design-to-markdown.png" width="1536" height="1024" alt="Design to Markdown artwork showing a Markdown document with headings, text, image syntax, and a table">
+          </span>
+          <span class="project-card-copy">
+            <span class="item-title">Design to .MD</span>
+            <span class="item-description">A Figma plugin that turns your designs into structured Markdown.</span>
+            <span class="item-action">View Figma plugin</span>
+          </span>
+        </a>
+
+        <article class="project-card" hidden>
+          <div class="media-placeholder project-card-media media-placeholder--dark" role="img" aria-label="Solari Screensaver project media pending"><span>Media pending</span></div>
+          <div class="project-card-copy">
+            <h3 class="item-title">Solari Screensaver</h3>
+            <p class="item-description">A Mac screensaver based on the Solari flip display, inspired by HKPandya.</p>
+          </div>
+        </article>
+
+        <a class="project-card" href="https://whatsmytax-five.vercel.app" target="_blank" rel="noopener noreferrer" hidden>
+          <span class="media-placeholder project-card-media" role="img" aria-label="Whatsmy Tax project media pending"><span>Media pending</span></span>
+          <span class="project-card-copy">
+            <span class="item-title">Whatsmy Tax</span>
+            <span class="item-description">A simple way to estimate income tax under India’s tax regimes.</span>
+            <span class="item-action">Open project</span>
+          </span>
+        </a>
+      </div>
+    </section>
 
   </main>
 
-  <nav class="bottom-nav" id="bottom-nav" aria-label="Page sections">
-    <a class="bottom-nav__item active" href="#home" data-section="home">Home</a>
-    <a class="bottom-nav__item" href="#work" data-section="work">Works</a>
-    <a class="bottom-nav__item" href="#projects" data-section="projects">Side Projects</a>
-  </nav>
-
-  <script src="js/bottom-nav.js"></script>
+  <footer class="contact-footer content-spine">
+    <div class="footer-main">
+      <p class="footer-initials">Ranga</p>
+      <nav aria-label="Social links">
+        <a class="footer-social-icon" href="mailto:srihari.rr@zohomail.in" aria-label="Email" title="Email">
+          <svg class="lucide lucide-mail" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a class="footer-social-icon" href="https://www.linkedin.com/in/ranga19/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+          <svg class="lucide lucide-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a class="footer-social-icon" href="https://www.instagram.com/rangar19/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+          <svg class="lucide lucide-instagram" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+      </nav>
+    </div>
+    <p class="footer-meta">Last updated October 2026 <span aria-hidden="true">•</span> Copyright © Ranga</p>
+  </footer>
+  <script>
+    const stashCard = document.querySelector('[data-stash-card]');
+    if (stashCard && window.matchMedia('(pointer: fine)').matches) {
+      stashCard.addEventListener('pointermove', (event) => {
+        const bounds = stashCard.getBoundingClientRect();
+        stashCard.style.setProperty('--cursor-x', `${event.clientX - bounds.left}px`);
+        stashCard.style.setProperty('--cursor-y', `${event.clientY - bounds.top}px`);
+      });
+    }
+  </script>
 </body>
 </html>

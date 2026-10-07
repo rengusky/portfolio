@@ -1,0 +1,46 @@
+# Ranga — Product Designer × Builder
+
+> Ranga is a product designer and builder with nine years of experience. He bridges design and engineering by writing code, shipping features, and using AI to reduce the gap between what is designed and what gets built. He currently leads the design team for Zoho Show, a cross-platform presentation product for Web, Android, and Apple platforms.
+
+Official portfolio: https://rangarajan.design/
+
+## Profile
+
+- Full name: Rangarajan
+- Preferred name: Ranga
+- Role: Product Designer × Builder
+- Employer: Zoho Corporation
+- Current product: Zoho Show
+- Based in India
+- Experience: Nine years in product design
+
+## Professional focus
+
+- Product design and product strategy
+- Design systems
+- Web, mobile, and desktop applications
+- Designing products from zero to one
+- Cross-platform product experiences
+- AI-assisted design and development
+- Writing code and shipping product improvements
+- Consumer technology and computer hardware
+
+## Selected work
+
+- [Designing Zoho Show for Mac](https://rangarajan.design/designing-for-mac.html): A zero-to-one product design project that brought Zoho Show from iPad to a native macOS presentation experience. The full case study is currently being documented.
+
+## Side projects
+
+- [Stash](https://testflight.apple.com/join/StmCpgpn): An application for collecting, organising, and sharing inspiration, including images, videos, articles, and links.
+- [Design to Markdown](https://www.figma.com/community/plugin/1622264338067161068/design-to-markdown): A Figma plugin that converts designs into structured Markdown.
+
+## Personal interests
+
+Outside work, Ranga enjoys badminton, photography, PlayStation games, and exploring food. He likes tinkering with hardware at home and has an interest in consumer technology, thoughtfully designed products, watches, and shoes.
+
+## Contact and profiles
+
+- [Portfolio](https://rangarajan.design/)
+- [LinkedIn](https://www.linkedin.com/in/ranga19/)
+- [Instagram](https://www.instagram.com/rangar19/)
+- Email: srihari.rr@zohomail.in
