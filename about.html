@@ -11,14 +11,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&amp;family=Inter:wght@500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20261006-footer-v2">
+  <link rel="stylesheet" href="css/style.css?v=20261007-mobile-left-align">
+  <script src="js/site-nav.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header content-spine">
     <a class="brand" href="index.html" aria-label="Ranga, home">Ranga</a>
-    <nav class="site-nav" aria-label="Primary navigation">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <svg class="nav-icon nav-icon--menu lucide lucide-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg class="nav-icon nav-icon--close lucide lucide-x" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
       <a href="index.html">Home</a>
       <a href="index.html#side-projects">Side Projects</a>
       <a href="notes.html">Notes</a>
