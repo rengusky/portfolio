@@ -8,8 +8,8 @@
   --border: #d0d0d0;
   --accent: #fe3100;
   --radius: 16px;
-  --content-width: 30vw;
-  --reading-width: 30vw;
+  --content-width: 40vw;
+  --reading-width: 40vw;
   --ease: ease-out;
 }
 
@@ -191,7 +191,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
   font-size: 16px; font-weight: 500; line-height: 1.5;
 }
 .contact-footer p { margin: 0; }
-.footer-main { display: flex; justify-content: space-between; align-items: center; gap: 48px; }
+.footer-main { display: flex; justify-content: flex-end; align-items: center; gap: 48px; }
 .footer-initials { font-weight: 600; letter-spacing: -.02em; }
 .contact-footer nav { display: flex; align-items: center; gap: 8px; }
 .contact-footer .footer-social-icon { display: inline-grid; width: 44px; height: 44px; place-items: center; color: var(--text); text-decoration: none; transition: color 120ms var(--ease), opacity 120ms var(--ease); }
