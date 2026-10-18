@@ -145,7 +145,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
 .media-placeholder--dark { background: #242424; }
 .media-placeholder--dark::before { background: #393939; border-color: #666; }
 .work-media { width: 100%; overflow: hidden; border-radius: var(--radius); background: #000; }
-.work-media--mac { aspect-ratio: 2400 / 1558; }
+.work-media--mac { aspect-ratio: 1512 / 982; }
 .work-media img { width: 100%; height: 100%; object-fit: cover; }
 .work-row[href] { transition: opacity 120ms var(--ease); }
 .work-row[href]:hover { opacity: .78; }
@@ -191,7 +191,77 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
 .about-copy p, .about-section > p { margin: 0; font-size: 16px; font-weight: 400; line-height: 1.6; }
 .about-section { margin-top: 72px; padding-top: 40px; border-top: 1px solid rgba(0, 0, 0, .16); }
 .about-section > .section-label { margin-bottom: 18px; }
+.inspiration-logos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 6px 0 24px;
+  padding: 0;
+  list-style: none;
+}
+.inspiration-logos li { display: flex; align-items: center; min-height: 44px; }
+.inspiration-logo { display: block; overflow: visible; }
+.inspiration-logo--apple { width: 34px; height: 34px; fill: var(--text); }
+.inspiration-logo--muji { width: 86px; height: auto; }
+.inspiration-logo--muji rect { fill: #7f0019; }
+.inspiration-logo--muji text {
+  fill: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+.inspiration-logo--ikea { width: 88px; height: auto; }
+.inspiration-logo--ikea rect { fill: #0058a3; }
+.inspiration-logo--ikea ellipse { fill: #ffda1a; }
+.inspiration-logo--ikea text {
+  fill: #0058a3;
+  font-family: Arial Black, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -.08em;
+}
+.inspiration-logo--fujifilm { width: 112px; height: auto; }
+.inspiration-logo--fujifilm text {
+  fill: #000;
+  font-family: Arial Black, Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: -.06em;
+}
+.inspiration-logo--fujifilm .fujifilm-accent { fill: #e60012; }
+.inspiration-logo--logitech { width: 112px; height: auto; fill: #000; }
+.inspiration-logo--logitech text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -.06em;
+}
 .photo-journal > p { color: var(--text); }
+.photo-journal-gallery {
+  --marquee-inset: calc((100vw - var(--reading-width)) / 2);
+  width: 100vw;
+  margin-top: 24px;
+  margin-left: calc((var(--reading-width) - 100vw) / 2);
+  overflow: hidden;
+}
+.photo-marquee-track {
+  display: flex;
+  width: max-content;
+  transform: translateX(var(--marquee-inset));
+  animation: photo-marquee 72s linear infinite;
+  will-change: transform;
+}
+.photo-marquee-group { display: flex; flex: none; gap: 16px; padding-right: 16px; }
+.photo-journal-gallery:hover .photo-marquee-track,
+.photo-journal-gallery:focus-within .photo-marquee-track,
+.photo-journal-gallery.is-paused .photo-marquee-track { animation-play-state: paused; }
+.photo-journal-gallery figure { flex: 0 0 auto; height: clamp(320px, 34vw, 480px); margin: 0; }
+.photo-journal-gallery img { width: auto; max-width: none; height: 100%; border-radius: 12px; }
+@keyframes photo-marquee {
+  from { transform: translateX(var(--marquee-inset)); }
+  to { transform: translateX(calc(-50% + var(--marquee-inset))); }
+}
 .about-contact nav { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 24px; }
 .about-contact .contact-icon {
   display: inline-grid; width: 44px; height: 44px; place-items: center;
@@ -218,10 +288,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
 
 .case-study { padding-top: 64px; padding-bottom: 80px; }
 .case-intro { text-align: center; }
+.case-intro--mac { text-align: left; }
+.case-intro--mac .case-lede, .case-intro--mac .case-summary { margin-inline: 0; }
 .case-intro h1 { margin: 0; font-size: 32px; font-weight: 700; line-height: 1.2; letter-spacing: -.02em; }
 .case-lede { max-width: 740px; margin: 16px auto 0; color: var(--text); font-size: 24px; font-weight: 600; line-height: 1.3; letter-spacing: -.01em; }
 .case-summary { max-width: 600px; margin: 16px auto 0; color: var(--text); font-size: 16px; font-weight: 400; line-height: 1.5; }
-.case-mac-image { width: 100%; margin-top: 48px; overflow: hidden; border-radius: var(--radius); background: #fff; }
+.case-mac-image { width: 100%; margin-top: 48px; overflow: hidden; border: 1px solid rgba(0,0,0,.16); border-radius: var(--radius); background: #fff; }
 .case-mac-image img { display: block; width: 100%; height: auto; }
 .wip-notice {
   display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 6fr); gap: 48px;
@@ -354,6 +426,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
   .home-contact nav { flex: 0 0 auto; justify-content: flex-end; gap: 2px; }
   .home-contact .contact-icon { width: 40px; height: 40px; }
   .contact-footer { margin-top: 24px; padding: 48px 0 72px; }
+  .photo-journal-gallery {
+    --marquee-inset: 24px;
+    width: 100vw;
+    margin-top: 20px;
+    margin-left: -24px;
+  }
+  .photo-marquee-group { gap: 12px; padding-right: 12px; }
+  .photo-journal-gallery figure { height: 340px; }
   .contact-footer nav { flex-wrap: nowrap; gap: 2px; }
   .footer-main { flex: 0 0 auto; }
   .footer-meta { flex: 1 1 auto; font-size: 12px; }
@@ -385,9 +465,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
+  :root { --content-width: 75vw; --reading-width: 75vw; }
   .content-spine, .reading-spine { width: 75vw; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: 0.01ms !important; }
+  .photo-journal-gallery { overflow-x: auto; scrollbar-width: none; }
+  .photo-journal-gallery::-webkit-scrollbar { display: none; }
+  .photo-marquee-track { animation: none; transform: translateX(var(--marquee-inset)); will-change: auto; }
+  .photo-marquee-group[aria-hidden="true"] { display: none; }
 }
