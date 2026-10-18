@@ -192,17 +192,21 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
 .about-section { margin-top: 72px; padding-top: 40px; border-top: 1px solid rgba(0, 0, 0, .16); }
 .about-section > .section-label { margin-bottom: 18px; }
 .inspiration-logos {
+  --brand-symbol-max-height: 38px;
+  --brand-wordmark-max-height: 32px;
+  --brand-wordmark-max-width: 96px;
+  --brand-logo-gap: 40px;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: var(--brand-logo-gap);
   margin: 6px 0 24px;
   padding: 0;
   list-style: none;
 }
-.inspiration-logos li { display: flex; align-items: center; min-height: 44px; }
-.inspiration-logo { display: block; overflow: visible; }
-.inspiration-logo--apple { width: 34px; height: 34px; fill: var(--text); }
-.inspiration-logo--muji { width: 86px; height: auto; }
+.inspiration-logos li { display: flex; flex: 0 0 auto; min-height: 44px; margin: 0; padding: 0; align-items: center; justify-content: center; }
+.inspiration-logo { display: block; width: auto; height: var(--brand-wordmark-max-height); max-width: var(--brand-wordmark-max-width); max-height: var(--brand-wordmark-max-height); overflow: visible; object-fit: contain; }
+.inspiration-logo--symbol { width: var(--brand-symbol-max-height); height: var(--brand-symbol-max-height); max-width: var(--brand-symbol-max-height); max-height: var(--brand-symbol-max-height); }
+.inspiration-logo--apple { fill: var(--text); }
 .inspiration-logo--muji rect { fill: #7f0019; }
 .inspiration-logo--muji text {
   fill: #fff;
@@ -211,7 +215,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
   font-weight: 700;
   letter-spacing: .08em;
 }
-.inspiration-logo--ikea { width: 88px; height: auto; }
 .inspiration-logo--ikea rect { fill: #0058a3; }
 .inspiration-logo--ikea ellipse { fill: #ffda1a; }
 .inspiration-logo--ikea text {
@@ -220,22 +223,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
   font-size: 22px;
   font-weight: 900;
   letter-spacing: -.08em;
-}
-.inspiration-logo--fujifilm { width: 112px; height: auto; }
-.inspiration-logo--fujifilm text {
-  fill: #000;
-  font-family: Arial Black, Arial, Helvetica, sans-serif;
-  font-size: 23px;
-  font-weight: 900;
-  letter-spacing: -.06em;
-}
-.inspiration-logo--fujifilm .fujifilm-accent { fill: #e60012; }
-.inspiration-logo--logitech { width: 112px; height: auto; fill: #000; }
-.inspiration-logo--logitech text {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 21px;
-  font-weight: 700;
-  letter-spacing: -.06em;
 }
 .photo-journal > p { color: var(--text); }
 .photo-journal-gallery {
@@ -426,6 +413,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
   .home-contact nav { flex: 0 0 auto; justify-content: flex-end; gap: 2px; }
   .home-contact .contact-icon { width: 40px; height: 40px; }
   .contact-footer { margin-top: 24px; padding: 48px 0 72px; }
+  .inspiration-logos { --brand-logo-gap: 16px; flex-wrap: wrap; row-gap: 12px; }
   .photo-journal-gallery {
     --marquee-inset: 24px;
     width: 100vw;
