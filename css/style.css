@@ -226,7 +226,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
 }
 .photo-journal > p { color: var(--text); }
 .photo-journal-gallery {
-  --marquee-inset: calc((100vw - var(--reading-width)) / 2);
+  --marquee-inset: 0px;
   width: 100vw;
   margin-top: 24px;
   margin-left: calc((var(--reading-width) - 100vw) / 2);
@@ -415,7 +415,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
   .contact-footer { margin-top: 24px; padding: 48px 0 72px; }
   .inspiration-logos { --brand-logo-gap: 16px; flex-wrap: wrap; row-gap: 12px; }
   .photo-journal-gallery {
-    --marquee-inset: 24px;
+    --marquee-inset: 0px;
     width: 100vw;
     margin-top: 20px;
     margin-left: -24px;
