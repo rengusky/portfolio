@@ -27,7 +27,9 @@ Official portfolio: https://rangarajan.design/
 
 ## Selected work
 
-- [Designing Zoho Show for Mac](https://rangarajan.design/designing-for-mac.html): A zero-to-one product design project that brought Zoho Show from iPad to a native macOS presentation experience. The full case study is currently being documented.
+- **Zoho Show for Apple platforms:** Ranga works on native presentation experiences across iOS, iPadOS, and macOS, spanning presentation viewing and editing.
+  - [Zoho Show for iPhone and iPad](https://apps.apple.com/in/app/zoho-show-presentation-maker/id1309156447?platform=iphone)
+  - [Zoho Show for Mac](https://apps.apple.com/in/app/zoho-show-presentation-maker/id1309156447?platform=mac)
 
 ## Side projects
 
