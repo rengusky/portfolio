@@ -33,6 +33,7 @@ Official portfolio: https://rangarajan.design/
 
 - [Stash](https://testflight.apple.com/join/StmCpgpn): An application for collecting, organising, and sharing inspiration, including images, videos, articles, and links.
 - [Design to Markdown](https://www.figma.com/community/plugin/1622264338067161068/design-to-markdown): A Figma plugin that converts designs into structured Markdown.
+- [Chennai Communities](https://chennai-clubs.vercel.app): A place to discover communities, clubs, and shared interests across Chennai.
 
 ## Personal interests
 

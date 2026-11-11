@@ -138,6 +138,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
 .item-description { margin: 0; color: var(--text); font-size: 20px; font-weight: 400; line-height: 1.4; }
 .body-1 { font-size: 16px; font-weight: 400; line-height: 1.5; }
 .item-action { margin-top: 12px; font-size: 16px; font-weight: 500; color: var(--muted); text-decoration: underline; text-underline-offset: 4px; transition: opacity 120ms var(--ease); }
+.work-actions { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 12px; }
+.work-actions .item-action { margin-top: 0; }
 .media-placeholder { position: relative; display: block; overflow: hidden; border-radius: var(--radius); background: var(--surface); color: var(--muted); }
 .media-placeholder--feature { width: 100%; aspect-ratio: 500 / 326; background: linear-gradient(145deg, #e1e1e1, #f5f5f5); }
 .media-placeholder--feature::before { content: ""; position: absolute; width: 72%; height: 76%; left: -6%; top: -12%; border: 1px solid var(--border); border-radius: 12px; background: var(--elevated); }
@@ -157,7 +159,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
 .project-card-media { width: 100%; aspect-ratio: 16 / 11; background: linear-gradient(135deg, #e1e1e1 50%, #ededed 50%); }
 .project-card-media--stash { display: block; aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius); background: var(--accent); }
 .project-card-media--design-to-md { display: block; aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius); background: var(--surface); }
-.project-card-media--stash img, .project-card-media--design-to-md img { width: 100%; height: 100%; object-fit: cover; }
+.project-card-media--chennai { display: block; aspect-ratio: 4 / 3; overflow: hidden; border: 1px solid rgba(0, 0, 0, .12); border-radius: var(--radius); background: #f5f7fb; }
+.project-card-media--stash img, .project-card-media--design-to-md img, .project-card-media--chennai img { width: 100%; height: 100%; object-fit: cover; }
+.project-card-media--chennai img { object-position: center bottom; }
 .project-card-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
 .project-card .item-description { font-size: 16px; line-height: 1.5; }
 .project-card .item-action { margin-top: 2px; }
